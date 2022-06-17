@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: hsl(0, 0%, 95%);
+    width: 100%;
+}
+a{
+    color: hsl(31, 77%, 52%);
+    text-decoration: none;
+    font-size: 20px;
+    margin: 40px;
+}
+a:hover {
+    color: blue;
+    text-decoration: underline;
+}
+main {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100vh;
+    width: 100vw ;
+    justify-content: center;
+    align-items: center; 
+    border-radius: 5px;
+}
+main div{
+    padding: 2rem;
+}
+.container1 {
+    background-color: hsl(31, 77%, 52%);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    width: 300px;
+    height: 450px;
+}
+.container2 {
+    background-color: hsl(184, 100%, 22%);
+    width: 300px;
+    height: 450px;
+}
+.container3 {
+    background-color: hsl(179, 100%, 13%);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: 300px;
+    height: 450px;
+}
+p {
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+}
+img {
+    padding-bottom: 2rem;
+}
+h1 {
+    color: hsl(0, 0%, 95%);
+    font-family: 'Big Shoulders Display', cursive;
+    padding-bottom: 2rem;
+    font-weight: 700;
+}
+button {
+    background-color: hsl(0, 0%, 95%);
+    font-family: 'Lexend Deca', sans-serif;
+    margin-top: 4rem;
+    padding: 15px 40px;
+    border-radius: 30px;
+    cursor: pointer;
+    border: none;
+}
+.btn1, .btn2, .btn3 {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+}
+.btn1 {
+    color: hsl(31, 77%, 52%);
+}
+.btn2 {
+    color: hsl(184, 100%, 22%);
+}
+.btn3 {
+    color: hsl(179, 100%, 13%);
+}
+button:hover {
+    background-color: transparent;
+    border: 2px solid hsl(0, 0%, 95%);
+    color: hsl(0, 0%, 95%);
+    transition: 0.3s;
+}
+@media (max-width:899px) {
+    main {
+        margin-top: 50px;
+    }
+}
+@media (max-width:899px) and ( min-width:599px) {
+    .container2 {
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+    .container3 {
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+}
+@media (max-width:599px) {
+    .container1 {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0px;
+    }
+    .container3 {
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+}
+
+
